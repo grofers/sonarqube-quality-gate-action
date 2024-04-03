@@ -8,7 +8,7 @@ runs:
   using: "composite"
   steps:
     - id: quality-gate-check
-      run: $GITHUB_ACTION_PATH/sonarqube-quality-gate-action/script/check-quality-gate.sh ${{ inputs.scanMetadataReportFile  }}
+      run: $GITHUB_ACTION_PATH/script/check-quality-gate.sh ${{ inputs.scanMetadataReportFile  }}
       shell: bash
 inputs:
   scanMetadataReportFile:
